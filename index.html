@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="weather-card">
+
+            <h1>🌤 Weather App</h1>
+
+            <div class="search-box">
+
+                <input type="text"
+                id="cityInput"
+                placeholder="Search city...">
+
+                <button id="searchBtn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+            </div>
+
+            <button class="location-btn" id="locationBtn">
+                📍 Use Current Location
+            </button>
+
+            <div class="weather-info">
+
+                <img id="weatherIcon" src="" alt="">
+
+                <h2 id="temperature">--°C</h2>
+
+                <h3 id="cityName">City Name</h3>
+
+                <p id="description">Weather Description</p>
+
+                <div class="details">
+
+                    <div class="detail-card">
+                        <i class="fa-solid fa-water"></i>
+                        <span id="humidity">--%</span>
+                        <p>Humidity</p>
+                    </div>
+
+                    <div class="detail-card">
+                        <i class="fa-solid fa-wind"></i>
+                        <span id="wind">-- km/h</span>
+                        <p>Wind</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Extra Scroll Content -->
+
+            <div class="forecast-section">
+
+                <h2>7-Day Forecast</h2>
+
+                <div class="forecast-container">
+
+                    <div class="forecast-card">
+                        <p>Mon</p>
+                        <i class="fa-solid fa-cloud-sun"></i>
+                        <span>30°C</span>
+                    </div>
+
+                    <div class="forecast-card">
+                        <p>Tue</p>
+                        <i class="fa-solid fa-cloud-rain"></i>
+                        <span>28°C</span>
+                    </div>
+
+                    <div class="forecast-card">
+                        <p>Wed</p>
+                        <i class="fa-solid fa-sun"></i>
+                        <span>35°C</span>
+                    </div>
+
+                    <div class="forecast-card">
+                        <p>Thu</p>
+                        <i class="fa-solid fa-cloud"></i>
+                        <span>29°C</span>
+                    </div>
+
+                    <div class="forecast-card">
+                        <p>Fri</p>
+                        <i class="fa-solid fa-cloud-showers-heavy"></i>
+                        <span>27°C</span>
+                    </div>
+
+                    <div class="forecast-card">
+                        <p>Sat</p>
+                        <i class="fa-solid fa-sun"></i>
+                        <span>36°C</span>
+                    </div>
+
+                    <div class="forecast-card">
+                        <p>Sun</p>
+                        <i class="fa-solid fa-cloud-bolt"></i>
+                        <span>26°C</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
